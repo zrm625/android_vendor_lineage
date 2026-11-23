@@ -245,12 +245,9 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     PermissionControllerOverlay
 
-# Translations
-CUSTOM_LOCALES += \
-    ast_ES \
-    gd_GB \
-    cy_GB \
-    fur_IT
+# zrm625 (river): English only. Upstream adds ast_ES, gd_GB, cy_GB and fur_IT to
+# CUSTOM_LOCALES here, which product_config.mk appends to PRODUCT_LOCALES and so
+# to the aapt filter, keeping those four translations in every APK.
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
