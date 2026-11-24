@@ -1,0 +1,10 @@
+// zrm625: river has no Trebuchet. Perch is the home app and handles swipe-up-to-home, so SystemUI
+// must draw the navigation bar itself instead of handing it to a launcher taskbar.
+
+aconfig_values {
+  name: "aconfig-values-bp1a-com.android.wm.shell-all",
+  package: "com.android.wm.shell",
+  srcs: [
+    "*_flag_values.textproto",
+  ]
+}
